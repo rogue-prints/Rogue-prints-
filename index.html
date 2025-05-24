@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rogue Prints - Custom 3D printing service for parts, prototypes, and more." />
+  <title>Rogue Prints</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #f2f2f2;
+      margin: 0;
+    }
+    header {
+      background-color: #222;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1rem;
+      color: #aaa;
+    }
+    nav {
+      background: #333;
+      display: flex;
+      justify-content: center;
+      padding: 0.5rem 0;
+    }
+    nav a {
+      color: #f2f2f2;
+      text-decoration: none;
+      margin: 0 1rem;
+    }
+    nav a:hover {
+      color: #ffcc00;
+    }
+    .hero {
+      padding: 2rem;
+      text-align: center;
+      background: #1a1a1a;
+    }
+    .hero h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    .content {
+      padding: 2rem;
+    }
+    .services ul {
+      list-style: none;
+      padding: 0;
+    }
+    .services li::before {
+      content: '\2713\0020';
+      color: #ffcc00;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    input, textarea {
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: none;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #ffcc00;
+      color: #000;
+      padding: 0.75rem;
+      border: none;
+      font-weight: bold;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Rogue Prints</h1>
+    <p>Custom 3D Prints. Fast. Local. Affordable.</p>
+  </header>
+  <nav>
+    <a href="#services">What I Offer</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section class="hero">
+    <h2>Got an idea? Need a part? I’ll print it.</h2>
+    <p>Prototypes, gadgets, repairs, or gifts — if it can be printed, I can make it.</p>
+  </section>
+  <section class="content services" id="services">
+    <h2>Services</h2>
+    <ul>
+      <li>Custom CAD-to-Print jobs</li>
+      <li>Functional replacement parts</li>
+      <li>Art, cosplay, & collectibles</li>
+      <li>Low-volume production runs</li>
+      <li>Design help and prototyping</li>
+    </ul>
+  </section>
+  <section class="content contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>Let’s talk about your print job. No commitment — just ideas and pricing.</p>
+    <form action="mailto:3lite.aut0.paints@gmail.com" method="POST" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Tell me what you need printed..." required></textarea>
+      <button type="submit">Send Request</button>
+    </form>
+    <p>Call or text: <a href="tel:5032988111">(503) 298-8111</a></p>
+    <p>Email: <a href="mailto:3lite.aut0.paints@gmail.com">3lite.aut0.paints@gmail.com</a></p>
+  </section>
+  <footer>
+    &copy; 2025 Rogue Prints. All rights reserved.
+  </footer>
+</body>
+</html>
