@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rogue Prints - Custom 3D printing service for parts, prototypes, and more." />
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+  <title>Rogue Prints</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('assets/background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #f2f2f2;
+      margin: 0;
+      overflow-x: hidden;
+    }
+    #loader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 10000;
+    }
+    .loader-text {
+      font-size: 3rem;
+      color: #ff6600;
+      font-weight: bold;
+      animation: flicker 2s infinite;
+    }
+    @keyframes flicker {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+    .overlay {
+      display: none;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+    header {
+      background-color: #222;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      text-shadow: 0 0 10px #ff6600;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+      padding: 0.75rem 0;
+      gap: 1rem;
+    }
+    nav a {
+      color: #ffcc00;
+      text-decoration: none;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    nav a:hover {
+      color: #ffffff;
+    }
+    .hero {
+      padding: 3rem 1rem;
+      text-align: center;
+      background: rgba(20, 20, 20, 0.8);
+    }
+    .hero h2 {
+      color: #ffcc00;
+      font-size: 2rem;
+    }
+    .content {
+      padding: 2rem;
+    }
+    .content h2 {
+      text-align: center;
+      color: #ff6600;
+      text-shadow: 0 0 5px #ffcc00;
+    }
+    .services img {
+      display: block;
+      margin: 2rem auto;
+      max-width: 90%;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #000;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+    input, textarea {
+      margin-bottom: 1rem;
+      padding: 0.75rem;
+      border-radius: 5px;
+      border: none;
+    }
+    button {
+      background-color: #ffcc00;
+      color: #000;
+      padding: 0.75rem;
+      border: none;
+      font-weight: bold;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background-color: #e6b800;
+    }
+    footer {
+      background-color: #111;
+      color: #999;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div id="loader">
+    <div class="loader-text">ROGUE PRINTS</div>
+  </div>
+  <div class="overlay">
+    <header>
+      <h1>Rogue Prints</h1>
+      <p>Custom 3D Prints. Fast. Local. Futuristic.</p>
+    </header>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <section class="hero">
+      <h2>Got an idea? Need a part? I’ll print it.</h2>
+      <p>From battle-tested parts to eye-catching cosplay—I'll bring your vision to life.</p>
+    </section>
+    <section class="content" id="services">
+      <h2>What I Offer</h2>
+      <img src="assets/what-we-offer.png" alt="Services Offered">
+    </section>
+    <section class="content" id="contact">
+      <h2>Contact Me</h2>
+      <form action="mailto:3lite.aut0.paints@gmail.com" method="POST" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="What do you need printed?" rows="6" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <p style="text-align: center;">Or call/text: <a href="tel:5032988111">(503) 298-8111</a></p>
+    </section>
+    <footer>
+      &copy; 2025 Rogue Prints. Designed with style, printed with fire.
+    </footer>
+  </div>
+  <script>
+    window.addEventListener("load", () => {
+      document.getElementById("loader").style.display = "none";
+      document.querySelector(".overlay").style.display = "flex";
+    });
+  </script>
+</body>
+</html>
